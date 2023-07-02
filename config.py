@@ -15,5 +15,6 @@ sequences = [
     {"get": {"url": "https://www.google.com"}},
     {"click": {"by": By.XPATH, "value": "//textarea[@title='検索']"}},
     {"send_keys": {"by": By.XPATH, "value": "//textarea[@title='検索']", "text": "iphone"}},
+    {"send_keys": {"by": By.XPATH, "value": "//textarea[@title='検索']", "text": " 14", "append": True}},
     {"send_keys": {"by": By.XPATH, "value": "//textarea[@title='検索']", "text": Keys.ENTER}},
 ]
