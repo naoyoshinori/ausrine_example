@@ -36,6 +36,9 @@ def main():
 
 
 if __name__ == "__main__":
-    setup()
-    main()
-    cleanup()
+    try:
+        setup()
+        main()
+        cleanup()
+    except Exception as e:
+        logger.error(e)
